@@ -1,0 +1,140 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 80px; /* Spazio per la navbar */
+    margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* blocca lo scorrimento orizzontale */
+
+}
+
+
+.main-content {
+  padding-top: 80px;
+}
+
+
+
+  
+
+        .navbar {
+          background: #0CB2C0;
+          color: white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 20px;
+          position: fixed;
+          width: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1000;
+        }
+
+      .nav-links {
+        display: none;
+        flex-direction: row;
+        position: absolute;
+        top: 60px;
+        left: 0;         /* assicurati che ci sia */
+        right: 0;        /* per coprire tutta la larghezza */
+        background: #0CB2C0;
+        width: 100vw;    /* usa vw per evitare che esca */
+        text-align: center;
+        padding: 10px 15px;
+        margin: 0;       /* rimuove eventuali margini */
+      }
+      
+      
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+      }
+      
+      .nav-links li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+      
+      
+      
+    
+      
+      @media screen and (max-width: 768px) {
+        .menu-toggle {
+          display: block; /* Mostra il menu hamburger su mobile */
+        }
+        .nav-links {
+          display: none;  /* Nasconde il menu su mobile */
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          right: 0;
+          background-color: #0CB2C0;
+          width: 100vw;
+          text-align: center;
+          padding: 10px 0;
+        }
+      
+      
+      
+        .nav-links.active {
+          display: flex;
+        }
+        .nav-links li {
+          margin: 10px 0; /* Spaziatura tra i link nel menu mobile */
+        }
+      
+      
+        .menu-toggle {
+          display: block;
+          padding-right: 50px;
+        
+        }
+        .menu-toggle {
+          display: block;
+          font-size: 28px;
+          cursor: pointer;
+        }
+        
+      }
+
+   
+      
+       
+  
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.whatsapp { background: #25D366; }
+.email { background: #FF5733; }

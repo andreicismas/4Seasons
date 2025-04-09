@@ -1,0 +1,42 @@
+html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Nostre Camere</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Guest House</div>
+    <div class="menu-toggle">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chisiamo.html">Chi Siamo</a></li>
+      <li><a href="camere.html">Camere</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENUTO CAMERE -->
+  <div class="main-content">
+    <h1>Le Nostre Camere</h1>
+    <p>Qui puoi inserire immagini, descrizioni, prezzi, ecc.</p>
+  </div>
+
+  <!-- JS per il menu mobile -->
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
+

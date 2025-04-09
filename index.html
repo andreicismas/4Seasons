@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="logo">Guest House</div>
+       
+   
+         <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Guest House</div>
+    <div class="menu-toggle">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chisiamo.html">Chi Siamo</a></li>
+      <li><a href="camere.html">Camere</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
+          
+          
+          
+          
+    
+
+      
+      
+      <div class="main-content">
+        <h1>Benvenuti sa traiasca spp
+        </h1>
+        <!-- Altri contenuti -->
+      </div>
+      
+      
+    <button id="whatsapp-btn" style="display:none; position:fixed; bottom:20px; right:20px; padding:10px 20px; background:#25D366; color:white; border:none; border-radius:5px; cursor:pointer;">
+        📱 Prenota su WhatsApp
+    </button>
+    
+    
+
+
+    <header>
+        <h1>Benvenuti alla Guest House</h1> 
+      </header>
+
+    <section>
+        <h2>Le nostre camere</h2>
+        <p>Scopri le nostre stanze accoglienti e prenota subito!</p>
+    </section>
+
+    <section id="prenotazioni">
+        <h2>Prenota Ora</h2>
+        <p>Contattaci per disponibilità e prezzi.</p>
+     <a href="https://wa.me/+393463244526" class="btn whatsapp">📱 Prenota su WhatsApp</a>
+        <a href="mailto:4seasonsroma@gmail.com" class="btn email">📩 Prenota via Email</a>
+    </section>
+
+    <section id="contatti">
+        <h2>Dove siamo</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.5115632389907!2d12.466755077256389!3d41.88185416517723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f603b1cf6a96b%3A0xa59be83127f3fe89!2sVia%20Benedetto%20Musolino%2C%2041%2C%2000153%20Roma%20RM!5e0!3m2!1sit!2sit!4v1743634715455!5m2!1sit!2sit" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+ 
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+    
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+    
+
+</body>
+
+</html>
