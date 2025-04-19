@@ -38,7 +38,7 @@ body {
         display: none;
         flex-direction: row;
         position: absolute;
-        top: 60px;
+        top: 58px;
         left: 0;         /* assicurati che ci sia */
         right: 0;        /* per coprire tutta la larghezza */
         background: #0CB2C0;
@@ -47,6 +47,53 @@ body {
         padding: 10px 15px;
         margin: 0;       /* rimuove eventuali margini */
       }
+      /* Sezione Hero */
+.hero {
+  background-image: url('img/guesthouse.jpg'); /* sostituisci con il percorso della tua immagine */
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  color: rgb(9, 134, 107);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+background-color: rgba(0, 0, 0, 0.4); /* overlay scuro */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Animazione testo */
+.animated-text {
+  animation: fadeInDown 2s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
       
       
       .logo {
