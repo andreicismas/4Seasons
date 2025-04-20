@@ -2,8 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
-  font-family: Arial, sans-serif;
+  font-family:  'Dancing Script', sans-serif;
+  font-size: 30px;
   text-align: center;
   padding-top: 80px;
   /* Spazio per la navbar */
