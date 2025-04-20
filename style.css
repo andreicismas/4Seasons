@@ -19,11 +19,41 @@ body {
   padding-top: 80px;
 }
 
+/* contenitore prenotazioni*/
+
+#prenotazioni {
+  background-image: url('img/welcome-to-our-home-1205888_1280.jpg');
+  /* Sostituisci con il nome del tuo file */
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+}
+
+#prenotazioni::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Overlay scuro */
+  z-index: 0;
+}
+
+#prenotazioni .container {
+  position: relative;
+  z-index: 1;
+}
 
 
 
 .navbar {
-  background: #0CB2C0;
+  background: none;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -45,8 +75,8 @@ body {
   /* assicurati che ci sia */
   right: 0;
   /* per coprire tutta la larghezza */
-  background: #0CB2C0;
-  width: 100vw;
+  
+  /* width: 100vw; */
   /* usa vw per evitare che esca */
   text-align: center;
   padding: 10px 15px;
@@ -186,7 +216,6 @@ header {
 }
 
 section {
-  margin: 20px;
   padding: 20px;
 }
 
