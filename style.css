@@ -5,7 +5,7 @@ html {
 
 body {
   font-family:  'Dancing Script', sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   text-align: center;
   padding-top: 80px;
   /* Spazio per la navbar */
@@ -92,7 +92,7 @@ body {
   /* sostituisci con il percorso della tua immagine */
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  /* height: 50vh; */
   color: rgb(9, 134, 107);
   display: flex;
   justify-content: center;
