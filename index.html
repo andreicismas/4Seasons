@@ -8,8 +8,12 @@
   <link rel="stylesheet" href="style.css">
   <!-- new font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+RO:wght@100..400&display=swap"
+    rel="stylesheet">
+ 
+
 </head>
 
 <body>
@@ -37,6 +41,26 @@
     style="display:none; position:fixed; bottom:20px; right:20px; padding:10px 20px; background:#25D366; color:white; border:none; border-radius:5px; cursor:pointer;">
     📱 Prenota su WhatsApp
   </button>
+  <section class="carousel">
+    <div class="carousel-wrapper">
+      <img src="img\arc-of-constant-3044634_1280.jpg" class="carousel-slide active">
+      <img src="img\coliseum-7523764_1280.jpg" class="carousel-slide">
+      <img src="img\julius-caesar-626422_1280.jpg" class="carousel-slide">
+      <img src="img\rome-2263638_1280.jpg" class="carousel-slide">
+      <img src="img\rome-2698196_1280.jpg" class="carousel-slide">
+      <img src="img\rome-6207755_1280.jpg" class="carousel-slide">
+      <img src="img\rome-7245459_1280.jpg" class="carousel-slide">
+      <img src="img\san-pietro-857151_1280.jpg" class="carousel-slide">
+      <img src="img\trastevere-2394554_1280.jpg" class="carousel-slide">
+      <img src="img\welcome-to-our-home-1205888_1280.jpg" class="carousel-slide">
+
+      <div class="carousel-controls">
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
 
   <section id="prenotazioni">
     <div class="container">
@@ -54,15 +78,9 @@
       width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
-  <script>
-    const toggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
-
-    toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
+  <script src="script.js">
+  
   </script>
-
 
 </body>
 
