@@ -1,7 +1,14 @@
 html {
   scroll-behavior: smooth;
 }
+/* SIZE LOGO  */
+.logo {
+  height: 120px;
+  width: auto;
+  border-radius: 15%;
+}
 
+/* FINE LOGO */
 
 body {
   font-family:  'Dancing Script', sans-serif;
@@ -25,10 +32,10 @@ body {
 /* inizio carosel */
 .carousel {
   width: 100%;
-  height: 400px; /* Altezza fissa per stabilità */
+  height: 580px; /* Altezza fissa per stabilità */
   overflow: hidden;
   position: relative;
-  border-radius: 260px;
+  border-radius: 50px;
   margin-top: 25px;
 }
 
@@ -167,16 +174,12 @@ body {
 
 
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
-  margin: 0;
+  margin-top: 70px;
 }
 
 .nav-links li a {
@@ -232,8 +235,9 @@ body {
 
   .menu-toggle {
     display: block;
-    font-size: 28px;
+    font-size: 40px ;
     cursor: pointer;
+    color:rgb(9, 134, 107) ;
   }
 
 }
