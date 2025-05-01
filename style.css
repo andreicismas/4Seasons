@@ -19,6 +19,10 @@ main {
   flex: 1; /* Spinge il footer in basso */
 }
 
+.margin-txt{
+  margin-top: 100px;
+}
+
 /* ùùùùùùùùùùùùùù */
 
 /* SIZE LOGO  */
