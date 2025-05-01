@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Policy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container-logo">
+    
+          <img src="img/LOGO TRASTEVERE 4 SEASON-1.svg" alt="Logo" class="logo">
+        </div>
+        <div class="back-home-wrapper">
+          <a href="index.html" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M3 9.5L12 3l9 6.5v10.5a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z" />
+            </svg>
+            <span>Torna alla Home</span>
+          </a>
+        </div>
+    
+    
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chisiamo.html">Chi Siamo</a></li>
+          <li><a href="camere.html">Camere</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+  <div class="main-content">
+    <h1>Cookie Policy</h1>
+    <p>Questo sito utilizza i cookie per garantire una migliore esperienza di navigazione. Continuando a navigare sul nostro sito, accetti l'uso dei cookie.</p>
+
+    <h2>1. Cosa sono i cookie?</h2>
+    <p>I cookie sono piccoli file di testo che vengono memorizzati sul dispositivo dell'utente quando visita un sito web. Vengono utilizzati per raccogliere informazioni sulla navigazione dell'utente per scopi analitici e di miglioramento dell'esperienza.</p>
+
+    <h2>2. Tipologie di cookie utilizzati</h2>
+    <ul>
+      <li><strong>Cookie tecnici:</strong> Essenziali per il corretto funzionamento del sito, come quelli che mantengono l'accesso e la sessione.</li>
+      <li><strong>Cookie analitici:</strong> Utilizzati per raccogliere informazioni su come gli utenti navigano sul sito.</li>
+      <li><strong>Cookie di profilazione:</strong> Utilizzati per raccogliere dati sul comportamento dell'utente per personalizzare l'esperienza di navigazione.</li>
+    </ul>
+
+    <h2>3. Come gestire i cookie</h2>
+    <p>Puoi disabilitare i cookie modificando le impostazioni del tuo browser. Tuttavia, disabilitare i cookie potrebbe influire sulle funzionalità del sito.</p>
+
+    <h2>4. Modifiche alla Cookie Policy</h2>
+    <p>Eventuali modifiche alla nostra Cookie Policy saranno pubblicate su questa pagina.</p>
+  </div>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      toggle.classList.toggle("active"); // Aggiunto per animare l’icona
+    });
+  </script>
+
+</body>
+</html>

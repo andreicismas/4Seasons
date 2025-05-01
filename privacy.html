@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <nav class="navbar">
+        <div class="container-logo">
+    
+          <img src="img/LOGO TRASTEVERE 4 SEASON-1.svg" alt="Logo" class="logo">
+        </div>
+        <div class="back-home-wrapper">
+          <a href="index.html" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M3 9.5L12 3l9 6.5v10.5a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z" />
+            </svg>
+            <span>Torna alla Home</span>
+          </a>
+        </div>
+    
+    
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chisiamo.html">Chi Siamo</a></li>
+          <li><a href="camere.html">Camere</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+
+  <div class="main-content">
+    <h1>Privacy Policy</h1>
+    <p>La privacy dei nostri utenti è di fondamentale importanza per noi. Questa Privacy Policy descrive come raccogliamo, usiamo, proteggiamo e trattiamo i dati personali che raccogliamo dai visitatori del nostro sito web.</p>
+
+    <h2>1. Informazioni che raccogliamo</h2>
+    <p>Quando visiti il nostro sito, raccogliamo alcune informazioni personali come nome, indirizzo email, e altre informazioni che ci fornisci volontariamente tramite i nostri moduli di contatto.</p>
+
+    <h2>2. Come usiamo le informazioni</h2>
+    <p>Utilizziamo i dati raccolti per rispondere alle tue richieste, inviare comunicazioni, migliorare il nostro servizio, ecc.</p>
+
+    <h2>3. Protezione dei dati</h2>
+    <p>I tuoi dati sono protetti da misure di sicurezza appropriate, ma ti consigliamo di non inviare informazioni sensibili tramite il nostro sito senza precauzioni.</p>
+
+    <h2>4. Condivisione dei dati</h2>
+    <p>I tuoi dati non vengono condivisi con terzi, eccetto quando necessario per adempiere agli obblighi legali o per offrire i nostri servizi.</p>
+
+    <h2>5. Modifiche alla Privacy Policy</h2>
+    <p>Ci riserviamo il diritto di aggiornare questa Privacy Policy. Eventuali modifiche verranno pubblicate su questa pagina.</p>
+  </div>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      toggle.classList.toggle("active"); // Aggiunto per animare l’icona
+    });
+  </script>
+
+</body>
+</html>

@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="it">
 
@@ -15,10 +14,25 @@ html
 </head>
 
 <body>
-
   <nav class="navbar">
-    <div class="logo">Guest House</div>
-    <div class="menu-toggle">&#9776;</div>
+    <div class="container-logo">
+      <img src="img/LOGO TRASTEVERE 4 SEASON-1.svg" alt="Logo" class="logo">
+    </div>
+
+    <div class="back-home-wrapper">
+      <a href="index.html" class="back-home">
+        <svg xmlns="http://www.w3.org/2000/svg" class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9.5L12 3l9 6.5v10.5a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z" />
+        </svg>
+        <span>Torna alla Home</span>
+      </a>
+    </div>
+
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="chisiamo.html">Chi Siamo</a></li>
@@ -27,10 +41,67 @@ html
     </ul>
   </nav>
 
-  <div class="main-content">
-    <h1>Contatti</h1>
-    <p>Inserisci qui numero di telefono, email, indirizzo e magari anche una mappa.</p>
-  </div>
+  <main>
+    <section class="contatti">
+      <div class="contatti-wrapper">
+        <div class="contatti-info">
+          <h2>Contattaci</h2>
+          <p><strong>Cisol s.r.l</strong></p>
+          <p>📍 Via Benedetto Musolino 41, 00153 Roma RM</p>
+          <p>📞 +39 06 1234567</p>
+          <p>📧 info@cisolguesthouse.it</p>
+          <p>📨 PEC: cisol@pec.it</p>
+          <p>🔢 P.IVA: IT17808161008</p>
+          <p>📁 Codice univoco: BA6ET11</p>
+        </div>
+
+        <div class="contatti-form">
+          <h2>Scrivici un messaggio</h2>
+          <azione modulo="https://formsubmit.co/4seasonsroma@gmail.com" method="POST">
+            <form action="https://formsubmit.co/4seasonsroma@gmail.com" method="POST">
+              <input type="text" name="nome" placeholder="Il tuo nome" required>
+              <input type="email" name="email" placeholder="La tua email" required>
+              <textarea name="messaggio" placeholder="Il tuo messaggio" rows="5" required></textarea>
+              <button type="submit">Invia</button>
+            </form>
+          <!-- <form action="mailto:4seasonsroma@gmail.com" method="POST" enctype="text/plain">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="La tua email" required>
+        
+            <label for="messaggio">Messaggio</label>
+            <textarea id="messaggio" name="messaggio" placeholder="Il tuo messaggio" rows="5" required></textarea>
+        
+            <button type="submit">✉️ Invia Messaggio</button>
+          </form> -->
+        </div>
+        
+      </div>
+
+      <div class="map-container">
+        <h3>Dove siamo</h3>
+        <iframe src="https://www.google.com/maps?q=Via+Benedetto+Musolino+41,+Roma&output=embed"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p><strong>Cisol S.r.l.</strong></p>
+        <p>Via Benedetto Musolino 41, 00153 Roma (RM), Italia</p>
+        <p>P.IVA: IT17808161008 – Codice Univoco: BA6ET11</p>
+      </div>
+      <div class="footer-right">
+        <p>PEC: <a href="mailto:cisol@pec.it">cisol@pec.it</a></p>
+        <p>mail: <a href="mailto:4seasonsroma@gmail.com">4seasonsroma@gmail.com</a></p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="cookie.html">Cookie Policy</a></p>
+        <p>© 2025 Tutti i diritti riservati</p>
+      </div>
+    </div>
+  </footer>
 
   <script>
     const toggle = document.querySelector(".menu-toggle");
@@ -39,7 +110,5 @@ html
       navLinks.classList.toggle("active");
     });
   </script>
-
 </body>
-
 </html>

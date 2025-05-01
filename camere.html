@@ -33,7 +33,11 @@
     </div>
 
 
-    <div class="menu-toggle">&#9776;</div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="chisiamo.html">Chi Siamo</a></li>
@@ -44,9 +48,61 @@
 
   <!-- CONTENUTO CAMERE -->
   <div class="main-content">
-    <h1>Le Nostre Camere</h1>
+    <h1><strong>Le Nostre Camere </strong></h1>
 
   </div>
+  <section class="camera">
+    <div class="camera-content">
+      <!-- Carousel immagini spazi comuni -->
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="house img/20250429_115513.jpg" alt="Spazio comune 1">
+
+          <img src="house img\20250424_202333.jpg" alt="Camera 1">
+          <img src="house img\20250429_115513.jpg" alt="Camera 2">
+          <img src="house img\20250429_115718.jpg" alt="Camera 3">
+          <img src="house img\20250429_115724.jpg" alt="Camera 3">
+          <img src="house img\20250429_121805.jpg" alt="Camera 3">
+          <img src="house img\20250429_121822.jpg" alt="Camera 3">
+          <img src="house img\20250429_153550.jpg" alt="Camera 3">
+          <img src="house img\20250429_155703.jpg" alt="Camera 3">
+          <img src="house img\20250429_155749.jpg" alt="Camera 3">
+          <img src="house img\20250429_155905.jpg" alt="Camera 3">
+          <img src="house img\20250429_160718.jpg" alt="Camera 3">
+          <img src="house img\20250429_160732.jpg" alt="Camera 3">
+          <img src="house img\20250429_160816.jpg" alt="Camera 3">
+          <img src="house img\20250429_160846.jpg" alt="Camera 3">
+          <img src="house img\20250429_160915.jpg" alt="Camera 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+
+      <!-- Info spazi comuni -->
+      <div class="camera-info">
+        <h2>Spazi Comuni – Comfort e Servizi per Tutti gli Ospiti</h2>
+        <p>
+          La nostra guest house offre una comoda area comune accessibile a tutti gli ospiti, ideale per rilassarsi,
+          socializzare o gestire le esigenze quotidiane durante il soggiorno.
+        </p>
+
+        <h3>Dotazioni disponibili:</h3>
+        <ul>
+          <li>🧺 Lavatrice e asciugatrice a disposizione</li>
+          <li>🚻 Bagno di servizio ad uso comune, sempre pulito e accessoriato</li>
+          <li>🪑 Tavoli e sedute per mangiare, leggere o lavorare</li>
+          <li>🌐 Connessione Wi-Fi anche in area comune</li>
+          <li>🧹 Pulizia regolare degli spazi condivisi</li>
+          <li>🧯 Area sicura, videosorvegliata e ben illuminata</li>
+        </ul>
+
+        <p><strong>Accesso:</strong> libero per tutti gli ospiti della struttura, 24 ore su 24</p>
+        <p><em>Un ambiente pratico e ordinato per sentirsi davvero a casa.</em></p>
+      </div>
+    </div>
+  </section>
+
+
   <section class="camera">
     <div class="camera-content">
       <!-- Carousel -->
@@ -186,7 +242,7 @@
 
       <!-- Info -->
       <div class="camera-info">
-        <h2>Camera Matrimoniale – Eleganza e Relax nel cuore di Trastevere</h2>
+        <h2>Camera Tripla – Eleganza e Relax nel cuore di Trastevere</h2>
         <p>
           Scopri la nostra ampia e luminosa <strong>camera matrimoniale</strong>, pensata per offrire il massimo del
           comfort e della tranquillità durante il tuo soggiorno a Roma. Ideale per <strong>coppie, viaggiatori singoli o
@@ -232,7 +288,7 @@
       </div>
     </div>
   </footer>
-  
+
 
 
 
@@ -248,11 +304,13 @@
   <!-- JS per il menu mobile -->
 
   <script>
+   
     const toggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
 
     toggle.addEventListener("click", () => {
       navLinks.classList.toggle("active");
+      toggle.classList.toggle("active"); // Aggiunto per animare l’icona
     });
 
     document.querySelectorAll('.carousel').forEach(carousel => {

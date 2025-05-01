@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="it">
 
@@ -9,34 +8,106 @@ html
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+RO:wght@100..400&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div class="page-wrapper">
 
-  <nav class="navbar">
-    <div class="logo">Guest House</div>
-    <div class="menu-toggle">&#9776;</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="chisiamo.html">Chi Siamo</a></li>
-      <li><a href="camere.html">Camere</a></li>
-      <li><a href="contatti.html">Contatti</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar">
+      <div class="container-logo">
 
-  <div class="main-content">
-    <h1>Chi Siamo</h1>
-    <p>Qui puoi scrivere una descrizione della struttura, la storia, i servizi offerti, ecc.</p>
+        <img src="img/LOGO TRASTEVERE 4 SEASON-1.svg" alt="Logo" class="logo">
+      </div>
+      <div class="back-home-wrapper">
+        <a href="index.html" class="back-home">
+          <svg xmlns="http://www.w3.org/2000/svg" class="home-icon" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M3 9.5L12 3l9 6.5v10.5a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z" />
+          </svg>
+          <span>Torna alla Home</span>
+        </a>
+      </div>
+
+
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chisiamo.html">Chi Siamo</a></li>
+        <li><a href="camere.html">Camere</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <main>
+
+
+      <section class="chi-siamo">
+        <div class="container">
+          <h1 class="titolo">La Nostra Storia</h1>
+          <p>
+            Benvenuti nella nostra <strong>Guest House a conduzione familiare</strong>, situata nel cuore autentico di
+            Roma.
+            Siamo una piccola realtà che ha scelto di trasformare la passione per l’ospitalità in un’esperienza unica
+            per
+            i
+            nostri ospiti.
+          </p>
+          <p>
+            La nostra struttura nasce dal desiderio di offrire un'accoglienza calda, discreta e curata nei dettagli.
+            Ogni
+            camera è pensata per far sentire ogni ospite come a casa, con comfort moderni e un'atmosfera rilassante.
+          </p>
+          <p>
+            Da noi troverete sempre un sorriso, un consiglio sincero su cosa visitare, e la voglia di farvi vivere Roma
+            come
+            se foste dei veri romani.
+          </p>
+
+          <h2>I Nostri Valori</h2>
+          <ul>
+            <li>💛 Ospitalità genuina e personalizzata</li>
+            <li>🧼 Cura e pulizia in ogni dettaglio</li>
+            <li>📍 Posizione strategica per esplorare la città</li>
+            <li>🌿 Atmosfera familiare, semplice e rilassata</li>
+          </ul>
+
+          <p>
+            Siamo una piccola impresa, ma con un grande cuore. La vostra soddisfazione è la nostra priorità. Ogni
+            soggiorno
+            è speciale e merita il meglio.
+          </p>
+
+          <p style="margin-top: 2rem;"><em>Vi aspettiamo con gioia! La famiglia Cisol ❤️</em></p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p><strong>Cisol S.r.l.</strong></p>
+          <p>Via Benedetto Musolino 41, 00153 Roma (RM), Italia</p>
+          <p>P.IVA: IT17808161008 – Codice Univoco: BA6ET11</p>
+        </div>
+        <div class="footer-right">
+          <p>PEC: <a href="mailto:cisol@pec.it">cisol@pec.it</a></p>
+          <p><a href="privacy.html">Privacy Policy</a> | <a href="cookie.html">Cookie Policy</a></p>
+          <p>© 2025 Tutti i diritti riservati</p>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <script>
     const toggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
+
     toggle.addEventListener("click", () => {
       navLinks.classList.toggle("active");
+      toggle.classList.toggle("active");
     });
   </script>
 

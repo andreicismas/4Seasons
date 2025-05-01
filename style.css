@@ -2,6 +2,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/*senza spazio sotto fotter  */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Spinge il footer in basso */
+}
+
+/* ùùùùùùùùùùùùùù */
+
 /* SIZE LOGO  */
 .logo {
   height: 120px;
@@ -195,9 +214,41 @@ body {
 }
 
 
+/* animazione hamburger */
+.menu-toggle {
+  width: 30px;
+  height: 24px;
+  display: none; /* sarà visibile solo da 768px in giù */
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1000;
+}
 
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  background: #192437;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  margin-top: 3px;
+}
 
+/* Animazione quando è attivo */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
 
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+/* ùùùùùùùùùùùùùùùùùùù */
+
+/* menu hamburger */
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -246,12 +297,13 @@ body {
   }
 
   .logo {
-    height: 80px;
+    height: 105px;
     width: auto;
     border-radius: 15%;
   }
 
 }
+/* ùùùùùùùùùùùùùùùùùùùùùùùùùùùù */
 
 
 
@@ -500,9 +552,16 @@ header {
 /* fine camere */
 
 /* back to home  */
+@media (max-width: 767px) {
+  .back-home-wrapper {
+    display: none;
+  }
+}
+
 .back-home-wrapper {
   text-align: center;
-  
+ padding-right: 40px;
+
 }
 
 .back-home {
@@ -541,10 +600,12 @@ header {
 
 
 /* body camere */
-#id-camere{
-  background-color: #f0f0f0; /* oppure #fafafa */
+#id-camere {
+  background-color: #f0f0f0;
+  /* oppure #fafafa */
   color: #333;
 }
+
 /* ùùùùùùùùùùùùùùùùùù */
 
 
@@ -554,6 +615,7 @@ header {
   color: #fff;
   padding: 40px 20px;
   font-size: 0.9rem;
+  font-family: 'Segoe UI', sans-serif;
   text-align: center;
   border-top: 5px solid #0077cc;
 }
@@ -567,11 +629,13 @@ header {
   gap: 20px;
 }
 
-.footer-left, .footer-right {
+.footer-left,
+.footer-right {
   flex: 1;
 }
 
-.footer-left p, .footer-right p {
+.footer-left p,
+.footer-right p {
   margin: 10px 0;
 }
 
@@ -594,9 +658,148 @@ header {
     text-align: center;
     gap: 40px;
   }
-  .footer-left, .footer-right {
+
+  .footer-left,
+  .footer-right {
     flex: 1 1 100%;
   }
 }
 
 /* uuuuuuuuuuuuuuuuuuu */
+
+/* chi siamo css */
+.chi-siamo {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+
+  color: #333;
+}
+
+.chi-siamo .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.chi-siamo .titolo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  color: #2a4d69;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chi-siamo h2 {
+  margin-top: 30px;
+  color: #2a4d69;
+}
+
+.chi-siamo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.chi-siamo ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* ùùùùùùùùùùùùùùùùù */
+
+
+/* cookie  */
+.cookie-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+}
+
+.cookie-popup-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.cookie-popup button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cookie-popup button:hover {
+  background-color: #45a049;
+}
+
+/* ùùùùùùùùùùùùù */
+
+/* form style */
+.contatti-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f8f8f8;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  font-family: 'Arial', sans-serif;
+}
+
+.contatti-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.contatti-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contatti-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.contatti-form input,
+.contatti-form textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contatti-form input:focus,
+.contatti-form textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.contatti-form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contatti-form button:hover {
+  background-color: #2980b9;
+}
+
+/* ùùùùùùùùùùùùùùùù */
