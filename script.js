@@ -37,3 +37,6 @@ setInterval(() => {
 }, 3000);
 
 // fine carousel
+
+// camere
+

@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 /* SIZE LOGO  */
 .logo {
   height: 120px;
@@ -11,7 +12,7 @@ html {
 /* FINE LOGO */
 
 body {
-  font-family:  'Dancing Script', sans-serif;
+  font-family: 'Dancing Script', sans-serif;
   font-size: 22px;
   text-align: center;
   padding-top: 80px;
@@ -32,7 +33,8 @@ body {
 /* inizio carosel */
 .carousel {
   width: 100%;
-  height: 580px; /* Altezza fissa per stabilità */
+  height: 780px;
+  /* Altezza fissa per stabilità */
   overflow: hidden;
   position: relative;
   border-radius: 30px;
@@ -66,7 +68,8 @@ body {
   transform: translateY(-50%);
   padding: 0 15px;
   box-sizing: border-box;
-  pointer-events: none; /* Evita che blocchi altri clic */
+  pointer-events: none;
+  /* Evita che blocchi altri clic */
 }
 
 .carousel-controls button {
@@ -76,13 +79,15 @@ body {
   font-size: 2rem;
   padding: 10px;
   border-radius: 20%;
-  pointer-events: all; /* Rende cliccabili i pulsanti */
+  pointer-events: all;
+  /* Rende cliccabili i pulsanti */
   transition: background-color 0.3s;
 }
 
 .carousel-controls button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
+
 /* fine carousel */
 
 
@@ -111,7 +116,7 @@ body {
   /* assicurati che ci sia */
   right: 0;
   /* per coprire tutta la larghezza */
-  
+
   /* width: 100vw; */
   /* usa vw per evitare che esca */
   text-align: center;
@@ -202,17 +207,17 @@ body {
   .nav-links {
     display: none;
     /* Nasconde il menu su mobile */
-    flex-direction:column;
+    flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
     right: 0;
     border-radius: 20px;
-    /* background-color: #0CB2C0; */
+    background-color: #0CB2C0;
     width: 100vw;
     text-align: center;
     padding: 0px 0;
-    
+
   }
 
 
@@ -235,16 +240,16 @@ body {
 
   .menu-toggle {
     display: block;
-    font-size: 40px ;
+    font-size: 40px;
     cursor: pointer;
-    color:whitesmoke;
+    color: #192437;
   }
 
   .logo {
     height: 80px;
     width: auto;
     border-radius: 15%;
-}
+  }
 
 }
 
@@ -277,3 +282,211 @@ header {
 .email {
   background: #FF5733;
 }
+
+/* camere */
+
+
+
+.camera {
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.camera-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Carousel responsive */
+.carousel {
+  position: relative; /* fondamentale! */
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* o cover */
+  flex-shrink: 0;
+}
+
+/* Bottoni posizionati localmente */
+.carousel .prev,
+.carousel .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.camera-info {
+  text-align: center;
+  padding: 10px;
+}
+
+.prenota-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.prenota-btn:hover {
+  background-color: #005fa3;
+}
+
+@media (min-width: 768px) {
+  .camera-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .carousel,
+  .camera-info {
+    flex: 1 1 48%;
+  }
+}
+
+
+/* qualche mofifica dei testi  */
+.camera-info {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.camera-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.camera-info h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
+.camera-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.camera-info ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.camera-info ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Pulsante */
+.prenota-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.prenota-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .camera-content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .camera-info {
+    text-align: left;
+    padding: 15px;
+  }
+
+  .camera-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .camera-info p,
+  .camera-info ul li {
+    font-size: 0.95rem;
+  }
+
+  .prenota-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+/* fine modifiva testi 
+ */
+
+
+/* fine camere */
