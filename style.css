@@ -807,3 +807,42 @@ header {
 }
 
 /* ùùùùùùùùùùùùùùùù */
+
+/* .scroll-down-indicator */
+
+.scroll-down-indicator {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.scroll-down-indicator .arrow {
+  display: block;
+  font-size: 2em;
+  animation: bounce 1.5s infinite;
+  color: #888;
+}
+
+/* Effetto animato */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Visibile solo su mobile */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+/* fine .scroll-down-indicator */
