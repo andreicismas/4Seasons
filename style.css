@@ -232,7 +232,7 @@ body {
 .menu-toggle span {
   display: block;
   height: 3px;
-  background:white;
+  background:#beb667;
   border-radius: 2px;
   transition: all 0.3s ease;
   margin-top: 3px;
