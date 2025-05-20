@@ -150,7 +150,7 @@ body {
 
 /* Sezione Hero */
 .hero {
-  background-image: url('house img/20250424_202333.jpg');
+  background-image: url('house img/4seasonsflouers.jpg');
   /* sostituisci con il percorso della tua immagine */
   background-size: cover;
   background-position: 41% 30%;
@@ -362,14 +362,19 @@ header {
 
 /* Carousel responsive */
 .carousel {
-  position: relative;
-  /* fondamentale! */
-  width: 100%;
-  /* max-width: 600px; */
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center;     /* (opzionale) Centra verticalmente */
+  height: 100vh;           /* Imposta altezza per il centramento verticale, opzionale */
 }
+
+.carousel-wrapper {
+  width: 70%; /* Occupa il 50% del contenitore */
+}
+.carousel-slide{
+  border-radius: 20px;
+}
+
 
 .carousel-images {
   display: flex;
@@ -383,6 +388,7 @@ header {
   object-fit: contain;
   /* o cover */
   flex-shrink: 0;
+  
 }
 
 /* Bottoni posizionati localmente */
@@ -458,7 +464,7 @@ header {
     justify-content: space-between;
     text-align: left;
   }
-
+  
   .carousel,
   .camera-info {
     flex: 1 1 48%;
@@ -559,6 +565,9 @@ header {
 @media (max-width: 767px) {
   .back-home-wrapper {
     display: none;
+  }
+  .carousel-wrapper {
+    width: 95%; /* Occupa il 50% del contenitore */
   }
 }
 
